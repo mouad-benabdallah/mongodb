@@ -1,0 +1,39 @@
+GET http://localhost:3000/users
+###
+POST http://localhost:3000/users/newUser
+Content-Type: application/json
+
+{
+    "nom" : "Toto4",
+    "prenom" : "Toto",
+    "email" : "toto@mail.com"
+}
+
+###
+GET http://localhost:3000/users/628cc7d42eb21bc073bd7538 
+
+###
+PATCH http://localhost:3000/users/628cc7d42eb21bc073bd7538
+Content-Type: application/json
+
+{
+    "nom" : "Toto3",
+    "prenom" : "Toto",
+    "email" : "toto@mail.com"
+}
+
+###
+DELETE  http://localhost:3000/users/628cc665461e51919aa3d116
+
+###
+POST http://localhost:3000/messages/newMessage
+Content-Type: application/json
+
+{
+    "messageBody" : "premier message",
+    "dateEnvoi" : "24-05-2022",
+    "expediteur" : "Toto"
+}
+
+###
+GET http://localhost:3000/messages
